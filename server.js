@@ -14,7 +14,7 @@ const DB = "movielog"
 
 //-- MIDDLEWARE---
 // make sure these lines are above any app.get or app.post code blocks
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}), express.json(), express.urlencoded({extended:true}));
+app.use(cors({credentials: true, origin: ['http://localhost:3000','https://movierater22.onrender.com']}), express.json(), express.urlencoded({extended:true}));
 app.use(cookieParser())
 
 
